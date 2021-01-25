@@ -20,7 +20,7 @@ Video_ID INT NOT NULL,
 Title VARCHAR (255) NOT NULL,
 Name VARCHAR (255) NOT NULL,
 Rating INT,
-Review VARCHAR(255) NOT NULL);
+Review VARCHAR(255) UNIQUE NOT NULL);
 
 INSERT INTO reviewers(Video_ID, Title, Name, Rating, Review)
 VALUES
